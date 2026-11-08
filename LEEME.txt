@@ -1,0 +1,24 @@
+FITOPATOLOGÍAS AGUACATE - VERSIÓN ACTUALIZADA
+
+ARCHIVOS PARA PUBLICAR EN GITHUB PAGES
+- index.html
+- manifest.json
+- sw.js
+- icon-192.png
+- icon-512.png
+
+MEJORAS INCLUIDAS
+1. Selección manual de variedad: Hass, Criollo o Papelillo.
+2. Carga de foto desde galería o cámara, con reducción de tamaño para facilitar el almacenamiento en el celular.
+3. Análisis preliminar de colores de la imagen mediante JavaScript y Canvas.
+4. Selección de síntomas observados y comparación por reglas con entidades del catálogo.
+5. Guarda el resultado preliminar junto con la foto, variedad, notas y GPS en la galería local.
+6. Corrige el uso de event.currentTarget para que la navegación y los filtros funcionen también en Android.
+7. Actualiza la versión de caché del Service Worker.
+
+IMPORTANTE SOBRE EL DIAGNÓSTICO
+Esta versión NO contiene un modelo de inteligencia artificial entrenado para reconocer automáticamente la variedad ni para confirmar enfermedades a partir de una foto. La variedad se registra según la opción que seleccione el usuario. El análisis de imagen mide proporciones aproximadas de colores y las posibles coincidencias fitosanitarias se calculan según los síntomas marcados por el usuario. Es una ayuda de prediagnóstico, no sustituye inspección técnica ni análisis de laboratorio.
+
+PUBLICACIÓN
+Sube los cinco archivos principales (index.html, manifest.json, sw.js, icon-192.png e icon-512.png) a la raíz del repositorio GitHub Pages, reemplazando los anteriores. LEEME.txt es informativo y opcional.
+Después de publicar, abre el sitio en Chrome Android y actualiza. Si se muestra una versión anterior, cierra la PWA, abre el sitio en Chrome y recarga; el Service Worker nuevo debe reemplazar la caché anterior.
